@@ -1,0 +1,209 @@
+$background: #f2f2f2;
+$heading-large: 2.5rem ;
+$heading-medium: 2rem ;
+$heading-small: 1.7rem;
+$text-size: 1rem;
+
+
+html, body{
+  font-size: $text-size;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.site_wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+.notify{
+  display: none;
+  background-color: #1585f1;
+  color: #ffffff;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 0.2rem;
+
+}
+
+//PRELOADER SCSS START---------------------------------------------
+.preloader{
+
+  .preloaderbk{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+
+  }
+
+  .preloader-spinner{
+    position: fixed;
+
+    justify-content: center;
+    top: 40%;
+    left: 45%;
+    z-index: 1001;
+
+    @include breakpoint(small ony){
+      height: 100px;
+      width: 100px;
+    }
+
+  }
+}
+//PRELAODER SCSS END---------------------------------------------------------
+
+
+table{
+  border-collapse: collapse;
+
+  th, tr, td{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    border: solid 1px #c0c0c0 ;
+  }
+}
+
+
+.search-table{
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.admin_shared{
+
+
+  h2{
+    font-family: 'Chivo', sans-serif;
+    font-size: 1.6rem;
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-weight: bold;
+
+    @include breakpoint(medium only){
+      font-size: 1.8rem;
+    }
+
+  }
+
+
+
+}
+
+.vendor-order-modal{
+  .image{
+    text-align: center;
+    padding-top: 10px;
+    img {
+      height: 250px;
+      width: 200px;
+    }
+
+    @include breakpoint(small only){
+      img{
+        height: 300px;
+        width: 90%;
+      }
+    }
+  }
+
+  .details{
+
+    @include breakpoint(small only){
+      text-align: center;
+      padding-top: 10px;
+    }
+    padding-top: 10px;
+  }
+}
+
+
+p{
+  font-family: 'Archivo Narrow', serif;
+  font-size: 1.1rem;
+  @include breakpoint(medium only){
+    font-size: 1.3rem;
+  }
+
+}
+
+
+//THIS IS VERY IMPORTANT TO HIDE ANY ACTIONS FROMM VUE JS IF THE LIBRARY ISNT FULLY LOADED
+[v-cloak] .v-cloak--hidden{
+  display: none !important;
+}
+
+
+
+
+hr{
+  margin: 0 0 1rem 0;
+}
+
+.reveal{
+
+  border: 0;
+  border-radius: 0.5rem;
+
+  &:focus{
+    outline-style: none;
+  }
+
+}
+
+
+.notification{
+  display: none;
+  margin-top: 1.5rem;
+
+  ul{
+    li{
+      list-style: none;
+    }
+  }
+
+}
+
+span{
+  .fa-edit{
+    color: #9e672f;
+  }
+
+
+}
+
+
+.fa-times{
+  color: #ff253a;
+  
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
+.id-column{
+  padding: 10px;
+
+}
+
+#id-box{
+  max-width: 400px;
+  height: auto;
+  //border: 1px solid #0c6bc7;
+}
+
+#cert-box{
+  max-width: 400px;
+  height: auto;
+  //border: 1px solid #0c6bc7;
+}

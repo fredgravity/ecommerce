@@ -1,0 +1,34 @@
+.edit-orderDetails{
+  .edit-order-image{
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .order-details-info{
+    padding: 10px;
+    @include breakpoint(small only){
+      text-align: center;
+
+    }
+
+  }
+
+  @include breakpoint(small only){
+    .order-details-desc{
+      p {
+        text-align: left;
+        padding:10px;
+      }
+      h6{
+        text-align: left;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .order-update-form{
+    padding: 10px;
+    color: green;
+  }
+}

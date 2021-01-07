@@ -1,0 +1,36 @@
+.shopping_cart{
+  padding: 6rem;
+
+  @include breakpoint(small only){
+    padding: 5rem 0.3rem;
+  }
+
+
+  .ipay-btn{background-color: #04448C;border-color: #04448C;border-radius: 17px !important;}.modal{width: 27% !important;}.modal-header{padding-left:48px !important;padding-right: 48px !important;border-bottom: none !important;text-align: center !important;}.modal-footer{height: 120px;padding-left:48px !important;padding-right: 48px !important;margin-bottom: -17px !important;border-top: none !important;}.modal-body{margin-bottom: -25px;padding-right: 48px !important;padding-left: 48px !important;border-bottom: none !important;margin-top: -27px;}#close:hover{text-decoration: none !important;}.logo{width: 65px;height: 65px;}
+
+  h2{
+    margin-bottom: 0.5rem !important;
+  }
+
+  .cube-loader{
+    height: 120px;
+    width: 120px;
+    //position:fixed;
+    //top: 60%;
+    //bottom: 20%;
+    justify-content: center;
+    left: 45%;
+
+    @include breakpoint(medium only){
+      height: 100px;
+      width: 100px;
+    }
+
+    @include breakpoint(small only){
+      height: 50px;
+      width: 70px;
+    }
+  }
+
+
+}

@@ -1,0 +1,171 @@
+.home {
+  padding-top: 5rem;
+
+  @include breakpoint(small only) {
+    padding-top: 3.8rem;
+  }
+
+  .hero {
+    width: 100%;
+    box-sizing: border-box;
+
+    .hero-slider {
+      img {
+        width: 100% !important;
+        height: 450px;
+
+        @include breakpoint(small only) {
+          height: 300px;
+        }
+
+      }
+    }
+
+  }
+
+  .display-products {
+    padding: 2rem;
+
+    @include breakpoint(small only) {
+      padding: 0.7rem;
+      text-align: center;
+    }
+
+    .featured-product-link-name {
+      color: #000;
+
+      &:focus {
+        outline-style: none;
+      }
+
+    }
+
+    a {
+      outline-style: none;
+    }
+
+    .card {
+      padding: 0.1rem;
+      margin-bottom: 1rem;
+      min-width: 200px;
+      max-height: 495px;
+
+      @include breakpoint(medium only) {
+        min-width: 250px;
+      }
+
+      .card-section {
+        margin-bottom: 0.7rem;
+
+        @include breakpoint(small only) {
+          padding: 0.2rem;
+        }
+
+        img {
+          border-radius: 0.5rem;
+          width: 100% !important;
+          height: 200px !important;
+
+          @include breakpoint(medium only) {
+            width: 100% !important;
+            max-height: 200px !important;
+          }
+
+          @include breakpoint(small only) {
+            width: 90% !important;
+            max-height: 200px !important;
+
+          }
+
+        }
+
+        .button {
+          border-radius: 0.1rem;
+          cursor: pointer;
+          font-size: 0.9rem;
+
+          &.more {
+            color: #1585f1;
+            background-color: #ffffff;
+            border: 1px solid #1585f1;
+
+            &:hover {
+              color: #ffffff;
+              background-color: darken(#1585f1, 10%);
+            }
+
+          }
+
+        }
+
+      }
+    }
+
+    .cube-loader {
+      height: 120px;
+      width: 120px;
+      position: fixed;
+      top: 60%;
+      bottom: 20%;
+      justify-content: center;
+      left: 45%;
+
+      @include breakpoint(medium only) {
+        height: 100px;
+        width: 100px;
+      }
+
+      @include breakpoint(small only) {
+        height: 70px;
+        width: 70px;
+      }
+    }
+
+  }
+
+
+  .contact-artisao-heading{
+    padding: 20px;
+  }
+
+  #contact-us-form{
+
+    input:focus{
+      border-bottom: solid 2px #0c6bc7;
+    }
+  }
+
+
+  .display-comments{
+    height: 380px;
+    //background-color: #e5e5e5;
+    overflow: auto;
+    background-color: azure;
+    .display-comments-table{
+      td{
+        border-style: hidden !important;
+        padding: 0;
+      }
+      border-style: hidden !important;
+    }
+  }
+
+  .new-comments{
+
+    //height: 150px;
+    //background-color: #5e5e5e;
+    margin-top: 10px;
+    #comment{
+      height: 75px;
+    }
+
+    @include breakpoint(small only){
+      .new-comments-btn{
+        width: 100%;
+      }
+    }
+  }
+
+
+
+}

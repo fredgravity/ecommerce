@@ -1,0 +1,51 @@
+//IMPORT GOOGLE FONTS
+//@import url("https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans:300,400,600");
+//@import url("https://fonts.googleapis.com/css?family=Chivo|Archivo+Narrow:300,400,600");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Lora');
+
+
+//IMPORT ZURB FOUNDATION IN NPM
+@import "~foundation-sites/assets/foundation";
+
+//IMPORT THE NAV BAR FOR ADMIN
+@import "admin/nav";
+
+//IMPORT THE NAV BAR FOR ADMIN
+@import "admin/dashboard";
+
+//IMPORT THE GLOBAL SASS FILES
+@import "global";
+
+//IMPORT THE NAV FILES FOR HOME NAVIGATION
+@import "pages/nav";
+
+//IMPORT THE AUTHENTICATION FILE
+@import "pages/auth";
+
+//IMPORT THE CART FILE
+@import "pages/cart";
+
+//IMPORT THE HOME SLIDER FILE
+@import "pages/home";
+
+//IMPORT THE PRODUCT SLIDER FILE
+@import "pages/product";
+
+//IMPORT THE EDIT ORDER FILE
+@import "admin/editOrder";
+
+//IMPORT THE SEARCH FILE
+@import "pages/search";
+
+//IMPORT MOTION UI IN NPM
+@import "~motion-ui/src/motion-ui";
+
+
+
+//INCLUDE FOR THE IMPORTED MOTION UI LIBRARY TRANSITION AND ANIMATION MOTIONS
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+//IMPORT SLICK CAROUSEL
+@import "~slick-carousel/slick/slick.css";

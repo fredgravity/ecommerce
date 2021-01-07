@@ -1,0 +1,41 @@
+{
+  "autoload": {
+
+    "psr-4": {
+      "App\\": "app"
+    },
+
+    "files": [
+      "app/functions/function.php"
+    ]
+  },
+
+  "require": {
+    "vlucas/phpdotenv": "^2.5",
+    "altorouter/altorouter" : "^1.2",
+    "philo/laravel-blade": "^3.1",
+    "illuminate/database": "^5.6",
+    "phpmailer/phpmailer": "^6.0",
+    "voku/pagination": "^3.0",
+    "nesbot/carbon": "^1.33",
+    "slydepay/slydepay-soap": "^1.1",
+    "guzzlehttp/guzzle": "^6.3",
+    "paypal/rest-api-sdk-php": "^1.13",
+    "mailgun/mailgun-php": "^2.8",
+    "php-http/discovery": "^1.6",
+    "php-http/message": "^1.7",
+    "guzzlehttp/psr7": "^1.5",
+    "php-http/guzzle6-adapter": "1.0",
+    "php-http/curl-client": "^1.7"
+
+  },
+
+  "require-dev": {
+    "filp/whoops": "^2.2"
+  },
+
+  "config": {
+    "optimize-autoloader":true
+  }
+
+}

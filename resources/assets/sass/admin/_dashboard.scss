@@ -1,0 +1,123 @@
+
+.dashboard{
+
+  padding: 2rem 1rem;
+
+  .summary{
+
+    @include breakpoint(small only){
+      padding-bottom: 1rem;
+    }
+
+    .card{
+      width: 95%;
+      margin: 0 auto;
+
+      @include breakpoint(medium only){
+        width: 98%;
+      }
+
+      .card-section{
+
+          .icons{
+            font-size: 2.0rem;
+
+            @include breakpoint(medium only){
+                font-size: 1.5rem;
+              }
+
+            @include breakpoint(small only){
+              font-size: 1rem;
+            }
+
+            &.fa-shopping-cart{
+              color: #ff253a;
+            }
+
+            &.fa-money-bill{
+              color: #1b7e25;
+            }
+
+            &.fa-thermometer-empty{
+              color: #ff3800;
+            }
+
+            &.fa-user{
+              color: #0578f1;
+            }
+
+            &.fa-users{
+              color: #9e672f;
+            }
+
+            &.fa-shopping-bag{
+              color: #f12f91;
+            }
+
+            &.fa-toolbox{
+              color: #f12f91;
+            }
+
+            &.fa-hand-holding-usd{
+              color: #8b36ff;
+            }
+
+            &.fa-truck-loading{
+              color: #63ff29;
+            }
+
+
+
+
+          }
+
+        p,h4{
+          margin: 0;
+          padding: 0;
+          text-align: right;
+
+          @include breakpoint(medium only){
+            font-size: 1rem;
+          }
+        }
+
+      }
+
+      .card-divider{
+        background-color: #e8e4d2;
+        border-top: 2px solid #0578f1;
+
+        a{
+          color: #1585f1;
+        }
+      }
+
+    }
+
+  }
+
+
+
+  .graph{
+    margin: 2rem 0.5rem;
+
+    @include breakpoint(small only){
+      margin-top: 1rem;
+    }
+
+    .card{
+      width: 98%;
+    }
+
+    canvas{
+      height: 300px !important;
+
+      @include breakpoint(small only){
+        height: auto !important;
+      }
+
+    }
+
+  }
+
+}

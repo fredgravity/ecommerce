@@ -1,0 +1,32 @@
+.auth{
+  padding: 6rem;
+
+  @include breakpoint(small only){
+    padding: 5rem 1rem;
+  }
+
+  h2{
+    margin-bottom: 0.5rem !important;
+  }
+
+  .cube-loader{
+    height: 120px;
+    width: 120px;
+    //position:fixed;
+    //top: 60%;
+    //bottom: 20%;
+    justify-content: center;
+    left: 45%;
+
+    @include breakpoint(medium only){
+      height: 100px;
+      width: 100px;
+    }
+
+    @include breakpoint(small only){
+      height: 50px;
+      width: 70px;
+    }
+  }
+
+}
